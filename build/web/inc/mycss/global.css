@@ -1,0 +1,136 @@
+
+.wrapper {
+	 margin: 0 auto;
+}
+ body {
+	 line-height: 1;
+	 min-width: 500px;
+}
+ .none {
+	 display: none !important;
+}
+ .visible {
+	 visibility: hidden;
+}
+ .cursorPointer {
+	 cursor: pointer;
+}
+ section {
+	 padding-bottom: 75px;
+}
+ .primary-button {
+	 background-color: #91d0ed;
+	 border: none;
+	 color: white;
+	 padding: 10px;
+	 border-radius: 10px;
+	 font-size: 16px;
+	 font-weight: 700;
+}
+ .primary-button:hover {
+	 background-color: #8cd9dd;
+}
+ .secondary-button {
+	 background: linear-gradient(to right, #74e3e9, #65a5f0, #3fc3ff);
+	 border: none;
+	 color: white;
+	 padding: 10px;
+	 border: 1px solid white;
+	 border-radius: 10px;
+	 font-size: 16px;
+	 font-weight: 700;
+	 box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1);
+}
+ .secondary-button:hover {
+	 background: linear-gradient(to right, #76f3da, #76a5e0, #34d4fc);
+}
+ .checkbox-btn {
+	 width: 20px;
+	 appearance: none;
+	 -webkit-appearance: none;
+	 height: 18px;
+	 width: 18px;
+	 background-color: #d0f3f3;
+	 border: 2px solid #3288f3;
+	 cursor: pointer;
+	 border-radius: 5px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .checkbox-btn:after {
+	 content: '\e64c';
+	 font-weight: 900;
+	 font-family: 'themify';
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 color: white;
+	 display: none;
+	 font-size: 12px;
+}
+ .checkbox-btn:hover {
+	 background-color: #91d0ed;
+}
+ .checkbox-btn:checked {
+	 background-color: #3288f3;
+}
+ .checkbox-btn:checked:after {
+	 display: block;
+}
+ .loading {
+	 position: absolute;
+	 top: 0px;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 z-index: 10;
+	 background: rgba(0, 0, 0, 0.2);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .loading.none {
+	 display: none;
+}
+ .loading .loading-container {
+	 padding: 100px;
+	 background-color: white;
+	 border-radius: 40px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-direction: column;
+	 gap: 30px;
+}
+ .loading .loading-container img {
+	 width: 200px;
+}
+ .loading .loading-container .continuous {
+	 width: 200px;
+	 height: 25px;
+	 border-radius: 40px;
+	 color: #3288f3;
+	 border: 2px solid;
+	 position: relative;
+	 overflow: hidden;
+}
+ .loading .loading-container .continuous::before {
+	 content: "";
+	 position: absolute;
+	 margin: 2px;
+	 width: 14px;
+	 top: 0;
+	 bottom: 0;
+	 left: -20px;
+	 border-radius: inherit;
+	 background: currentColor;
+	 box-shadow: -10px 0 12px 3px currentColor;
+	 clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
+	 animation: ct4 1s infinite linear;
+}
+ @keyframes ct4 {
+	 100% {
+		 left: calc(100% + 20px);
+	}
+}
+ 

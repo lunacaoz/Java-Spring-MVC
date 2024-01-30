@@ -1,0 +1,31 @@
+.card {
+    overflow: hidden; /* Đảm bảo nội dung không vượt qua phần khung chứa */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Phóng to 1.1 lần khi di chuột vào */
+  }
+  .navbar-brand:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Optional: Để giảm mức độ phóng to khi hover */
+  .navbar-nav .nav-item:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+  }
+  .banner {
+    max-width: 1450px; /* Kích thước tối đa */
+    width: 100%; /* Đảm bảo rằng banner sẽ chiếm toàn bộ chiều rộng của parent container */
+    height: 394px; /* Chiều cao cụ thể */
+    margin: auto; /* Để căn giữa */
+    overflow: hidden; /* Để ẩn nội dung vượt ra khỏi kích thước được đặt */
+  }
+  
+  /* Tùy chỉnh kích thước ảnh trong banner */
+  .banner img {
+    width: 100%; /* Chiều rộng là 100% của container cha */
+    height: auto; /* Chiều cao tự động theo tỉ lệ */
+  }

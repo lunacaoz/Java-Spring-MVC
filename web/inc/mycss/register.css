@@ -1,0 +1,45 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+    /* Thêm kiểu dáng cho ô Place */
+.custom-form .form-outline.place-outline {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.custom-form .form-outline.place-outline input {
+    padding-top: 1.5rem;
+}
+
+.custom-form .form-outline.place-outline label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.75rem;
+    transition: 0.3s;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.custom-form .form-outline.place-outline input:focus + label,
+.custom-form .form-outline.place-outline input:not(:placeholder-shown) + label {
+    top: -1rem;
+    font-size: 0.75rem;
+    color: #198754;
+}
